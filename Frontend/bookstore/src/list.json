@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "title": "The Psychology of Money",
+    "author": "Morgan Housel",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?ga=GA1.1.832489586.1722591843&semt=ais_hybrid&w=740"
+  },
+  {
+    "id": 2,
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?ga=GA1.1.832489586.1722591843&semt=ais_hybrid&w=740"
+  },
+  {
+    "id": 3,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "price": 1200,
+    "category": "Paid",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?ga=GA1.1.832489586.1722591843&semt=ais_hybrid&w=740"
+  },
+  {
+    "id": 4,
+    "title": "Indian-ish",
+    "author": "Priya Krishna",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?ga=GA1.1.832489586.1722591843&semt=ais_hybrid&w=740"
+  },
+  {
+    "id": 5,
+    "title": "The Power of Now",
+    "author": "Eckhart Tolle",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?ga=GA1.1.832489586.1722591843&semt=ais_hybrid&w=740"
+  },
+  {
+    "id": 6,
+    "title": "The 48 Laws of Power",
+    "author": "Robert Greene",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?ga=GA1.1.832489586.1722591843&semt=ais_hybrid&w=740"
+  },
+
+  {
+    "id": 7,
+    "title": "Educated",
+    "author": "Tara Westover",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?ga=GA1.1.832489586.1722591843&semt=ais_hybrid&w=740"
+  },
+  {
+    "id": 8,
+    "title": "Becoming",
+    "author": "Michelle Obama",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?ga=GA1.1.832489586.1722591843&semt=ais_hybrid&w=740"
+  },
+  {
+    "id": 9,
+    "title": "Where the Crawdads Sing",
+    "author": "Delia Owens",
+    "price": 980,
+    "category": "Paid",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?ga=GA1.1.832489586.1722591843&semt=ais_hybrid&w=740"
+  },
+  {
+    "id": 10,
+    "title": "The Silent Patient",
+    "author": "Alex Michaelides",
+    "price": 1200,
+    "category": "Paid",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?ga=GA1.1.832489586.1722591843&semt=ais_hybrid&w=740"
+  }
+]
