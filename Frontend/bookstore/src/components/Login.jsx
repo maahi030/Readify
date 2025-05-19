@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import axios from "axios";
+import toast, { Toaster } from "react-hot-toast";
 
 function Login() {
   const {
@@ -8,9 +10,33 @@ function Login() {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = async (data) => {
+    const userData = {
+      email: data.email,
+      password: data.password,
+    };
+    await axios
+      .post("http://localhost:3000/users/login", userData)
+      .then((res) => {
+        console.log(res.data);
+        if (res.data) {
+          toast.success("Login success");
+          document.getElementById("my_modal_3").close();
+          setTimeout(() => {
+            window.location.reload();
+            localStorage.setItem("User", JSON.stringify(res.data));
+          }, 1000);
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+        toast.error("Invalid credentials");
+        setTimeout(() => {}, 2000);
+      });
+  };
   return (
     <div>
+      <Toaster />
       <dialog id="my_modal_3" className="modal">
         <div className="modal-box">
           <form method="dialog" onSubmit={handleSubmit(onSubmit)}>
@@ -18,6 +44,7 @@ function Login() {
             <Link
               to="/"
               className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+              onClick={() => document.getElementById("my_modal_3").close()}
             >
               ✕
             </Link>
@@ -30,10 +57,10 @@ function Login() {
                 type="email"
                 placeholder="Enter your email"
                 className="input input-bordered w-full max-w-xs"
-                {...register("emailRequired", { required: true })}
+                {...register("email", { required: true })}
               />
               <br />
-              {errors.emailRequired && (
+              {errors.email && (
                 <span className="text-sm text-red-500">
                   This field is required
                 </span>
@@ -46,10 +73,10 @@ function Login() {
                 type="password"
                 placeholder="Enter your password"
                 className="input input-bordered w-full max-w-xs"
-                {...register("passwordRequired", { required: true })}
+                {...register("password", { required: true })}
               />
               <br />
-              {errors.passwordRequired && (
+              {errors.password && (
                 <span className="text-sm text-red-500">
                   This field is required
                 </span>
